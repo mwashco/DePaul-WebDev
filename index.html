@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>City of Chicago Web Site</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            function clickMain(img_name, h1_text, h3_text) {
+                var url = 'url(images/' + img_name + ')';
+                $('.page_home').css('background-image', url);
+                $('.page_title').html(h1_text);
+                $('.page_subtitle').html(h3_text);
+                }
+        </script>
+
+	</head>
+	<body>
+
+		<div class="page">
+        <nav class="header-nav">
+            <ul>
+                <li><a class="outer" title="About" href="http://www.cityofchicago.org/city/en/about.html">About</a></li>
+                <li><a class="outer" title="Services" href="http://www.cityofchicago.org/city/en/svcs/find.html">Services</a></li>
+                <li><a class="middle" title="Chicago" href="javascript:window.location.reload(true)">Chicago</a></li>
+                <li><a class="outer" title="Government" href="http://www.cityofchicago.org/city/en/chicagogovt.html">Government</a></li>
+                <li><a class="outer" title="Programs" href="http://www.cityofchicago.org/city/en/progs.html" >Programs</a></li>
+            </ul>
+        </nav>
+
+        <section class="main">
+            <div class="page_home">
+                <h1><span class="page_title">Chicago</span></h1>
+                <hr>
+                <h3><span class="page_subtitle">City of Broad Shoulders...</span></h3>
+            </div>
+            <div class="scroll-down">
+                <img src="images/down-arrow.png">
+                <h4>scroll down for news</h4>
+            </div>
+                <nav class="right-nav">
+                    <ul id="right-select">
+                        <li><a title="Business" href="#" onclick="clickMain('business_001.jpg','Chicago Business','Hog Butcher to the world',this);
+                        $(this).closest('li').addClass('highlight').siblings().removeClass('highlight');">Business</a>
+                        </li>
+                        <li><a title="Culture & Recreation" href="#" onclick="clickMain('recreation_001.jpg','Chicago Culture and Recreation','A city that thrives');
+                        $(this).closest('li').addClass('highlight').siblings().removeClass('highlight');">Culture & Recreation</a>
+                        </li>
+                        <li><a title="Environment" href="#" onclick="clickMain('environment_001.jpg','Chicago Environment','Keep it green!');
+                        $(this).closest('li').addClass('highlight').siblings().removeClass('highlight');">Environment</a>
+                        </li>
+                        <li><a title="Housing & Development" href="#" onclick="clickMain('housing_001.jpg','Chicago Housing & Development','Home is where the heart is');
+                        $(this).closest('li').addClass('highlight').siblings().removeClass('highlight');">Housing & Development</a>
+                        </li>
+                        <li><a title="Social Services" href="#" onclick="clickMain('social_001.jpg','Chicago Social Services','We all help each other');
+                        $(this).closest('li').addClass('highlight').siblings().removeClass('highlight');">Social Services</a>
+                        </li>
+                        <li><a title="Civic Services" href="#" onclick="clickMain('civic_001.jpg','Chicago Civic Services','And justice for all...');
+                        $(this).closest('li').addClass('highlight').siblings().removeClass('highlight');">Civic Services</a>
+                        </li>
+                        <li><a title="Education" href="#" onclick="clickMain('education_001.jpg','Chicago Education','Education for all...');
+                        $(this).closest('li').addClass('highlight').siblings().removeClass('highlight');">Education</a>
+                        </li>
+                        <li><a title="Health" href="#" onclick="clickMain('health_001.jpg','Chicago Health','Take care of yourself');
+                        $(this).closest('li').addClass('highlight').siblings().removeClass('highlight');">Health</a>
+                        </li>
+                    </ul>
+                </nav>
+        </section>
+
+        <section class="news">
+                <aside>
+                    <div class="content" >
+                        <h4>27th May 2016</h4>
+                        <img src="images/news_001.jpg">
+                        <h4><a href="#">Article 1</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Lorem ipsum sed pharetra gravida, orci magna rhoncus
+                            neque, id pulvinar odio lorem non turpis.Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Lorem ipsum sed pharetra gravida, orci magna rhoncus
+                            neque, id pulvinar odio lorem non turpis.Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Lorem ipsum sed pharetra gravida, orci magna rhoncus
+                            neque, id pulvinar odio lorem non turpis.Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Lorem ipsum sed pharetra gravida, orci magna rhoncus
+                            neque, id pulvinar odio lorem non turpis.</p>
+                    </div>
+                </aside>
+                <aside>
+                    <div class="content" >
+                        <h4>27th May 2016</h4>
+                        <img src="images/news_002.jpg">
+                        <h4><a href="#">Article 2</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Lorem ipsum sed pharetra gravida, orci magna rhoncus
+                            neque, id pulvinar odio lorem non turpis.Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Lorem ipsum sed pharetra gravida, orci magna rhoncus
+                            neque, id pulvinar odio lorem non turpis.Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Lorem ipsum sed pharetra gravida, orci magna rhoncus
+                            neque, id pulvinar odio lorem non turpis.Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Lorem ipsum sed pharetra gravida, orci magna rhoncus
+                            neque, id pulvinar odio lorem non turpis.</p>
+                    </div>
+                </aside>
+                <aside>
+                    <div class="content" >
+                        <h4>27th May 2016</h4>
+                        <img src="images/news_003.jpg">
+                        <h4><a href="#">Article 3</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Lorem ipsum sed pharetra gravida, orci magna rhoncus
+                            neque, id pulvinar odio lorem non turpis.Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Lorem ipsum sed pharetra gravida, orci magna rhoncus
+                            neque, id pulvinar odio lorem non turpis.Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Lorem ipsum sed pharetra gravida, orci magna rhoncus
+                            neque, id pulvinar odio lorem non turpis.Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Lorem ipsum sed pharetra gravida, orci magna rhoncus
+                            neque, id pulvinar odio lorem non turpis.</p>
+                    </div>
+                </aside>
+                <aside>
+                    <div class="content" >
+                        <h4>27th May 2016</h4>
+                        <img src="images/news_004.jpg">
+                        <h4><a href="#">Article 4</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Lorem ipsum sed pharetra gravida, orci magna rhoncus
+                            neque, id pulvinar odio lorem non turpis.Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Lorem ipsum sed pharetra gravida, orci magna rhoncus
+                            neque, id pulvinar odio lorem non turpis.Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Lorem ipsum sed pharetra gravida, orci magna rhoncus
+                            neque, id pulvinar odio lorem non turpis.Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Lorem ipsum sed pharetra gravida, orci magna rhoncus
+                            neque, id pulvinar odio lorem non turpis.</p>
+                    </div>
+                </aside>
+                <aside>
+                    <div class="content" >
+                        <h4>27th May 2016</h4>
+                        <video width="320" height="240" controls="controls">
+                            <source src="images/test7.mp4" type="video/mp4">
+                        Your Browser does not support the video tag
+                        </video>
+                        <h4><a href="#">Article 5</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Lorem ipsum sed pharetra gravida, orci magna rhoncus
+                            neque, id pulvinar odio lorem non turpis.Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Lorem ipsum sed pharetra gravida, orci magna rhoncus
+                            neque, id pulvinar odio lorem non turpis.Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Lorem ipsum sed pharetra gravida, orci magna rhoncus
+                            neque, id pulvinar odio lorem non turpis.Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Lorem ipsum sed pharetra gravida, orci magna rhoncus
+                            neque, id pulvinar odio lorem non turpis.</p>
+                    </div>
+                </aside>
+                <aside>
+                    <div class="content" >
+                        <h4>27th May 2016</h4>
+                        <img src="images/news_006.jpg">
+                        <h4><a href="#">Article 6</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Lorem ipsum sed pharetra gravida, orci magna rhoncus
+                            neque, id pulvinar odio lorem non turpis.Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Lorem ipsum sed pharetra gravida, orci magna rhoncus
+                            neque, id pulvinar odio lorem non turpis.Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Lorem ipsum sed pharetra gravida, orci magna rhoncus
+                            neque, id pulvinar odio lorem non turpis.Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Lorem ipsum sed pharetra gravida, orci magna rhoncus
+                            neque, id pulvinar odio lorem non turpis.</p>
+                    </div>
+                </aside>
+
+        </section>
+
+
+
+        </div>
+	</body>
+
+</html>

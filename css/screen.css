@@ -1,0 +1,195 @@
+/* CSS Document for Screens */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700);
+
+body { font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 300; color: #555; margin: 0; padding: 0; }
+
+.page { max-width: 100%; margin: 0 auto; position: relative;}
+
+/* Text */
+
+h1 { margin: 0 0  1em 0;  font-size: 2.8em; font-weight: 700; }
+h2 { margin: 0 0 .5em 0;  font-size: 1.6em; font-weight: 700; line-height: 1.1em; }
+h3 { margin: 0 0 .5em 0;  font-size: 1.3em; font-weight: 700;}
+h4 { margin: 0 0 1.5em 0;  font-size: 1em; font-weight: 700;}
+
+p { margin: 0 0 1em 0; }
+
+a { color: #ffffff; }
+a:visited { color: #65b1ff;}
+
+
+
+/* Header Navigation */
+
+nav.header-nav {
+    background-color: rgba(0,0,0,.75);
+    position: fixed;
+    top: 0px; left: 0px;
+    padding: 2em 5em 2em 5em;
+    width: 100%;
+    z-index: 1;
+
+}
+
+
+nav.header-nav a { text-decoration: none; }
+nav.header-nav ul { list-style: none; margin: 0px; padding: 0px; }
+nav.header-nav ul li  { display: inline; width:20%; float: left;}
+nav.header-nav ul li  a.outer:hover { border-bottom: 1px solid #ff0000; }
+nav.header-nav ul li  a.outer  { color: #ffffff; font-size: small }
+nav.header-nav ul li  a.middle:hover { border-bottom: 1px solid #ff0000; }
+nav.header-nav ul li  a.middle { color: #ff0000; font-size: large }
+
+
+
+/* Main Section */
+
+nav.right-nav {
+    background-color: rgba(0,0,0,0);
+    position: absolute ;
+    top: 40%; left: 80%;
+    padding: 0 0 0 0;
+    width: auto;
+    z-index: 2;
+    list-style: none;
+
+}
+
+nav.right-nav a { text-decoration: none; }
+nav.right-nav ul { list-style: none; margin: 0px; padding: 0px; }
+nav.right-nav ul li { text-align: right; }
+
+
+nav.right-nav ul li a {
+    color: #ffffff;
+    font-size: large;
+}
+
+.highlight a { font-weight: 900; }
+.highlight a:after {
+    content: " - ";
+    font-size: 30px;
+    color: #ff0000;
+    }
+
+section.main {
+    width: 100%;
+    padding: 0 0 0 0;
+}
+
+section.main div.page_home  {
+    background-image: url("../images/chicago_img_002.jpeg");
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 768px;
+    position: relative;
+    z-index: -1;
+    transition: background-image 2s;
+    padding: 0 0 0 0;
+
+}
+
+section.main div.page_home h1 {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 60%;
+    z-index: -1;
+    color: #ffffff;
+}
+
+section.main div.page_home hr {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    width: 10%;
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: #ff0000;
+}
+
+section.main div.page_home h3 {
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    width: 80%;
+    z-index: -1;
+    color: #ffffff;
+
+}
+
+section.main div.scroll-down {
+    background-color: rgba(0,0,0,0);
+    position: absolute;
+    top: 85%;
+    left: 48%;
+    width: 20%;
+    z-index: -1;
+}
+
+section.main div img {
+    position: absolute;
+    left: 0;
+}
+section.main div.scroll-down h4 {
+    color: #ffffff;
+    position: absolute;
+    left: -55px;
+    text-align: left;
+    padding-top: 40px;
+
+}
+
+section.news { margin: 30px 30px 30px 30px; }
+
+section.news aside { width: 30%; float: left; margin-right: 10px; }
+section.news aside .content { padding: 30px 30px 20px 0;  }
+section.news aside .content img { display: block; margin-bottom: 15px; width: 70%; }
+section.news aside .content h4 { margin-bottom: 0; }
+section.news aside .content p { margin-bottom: .5em; }
+section.news aside .content a { display: inline-block; color: #cc6633; font-weight:700; }
+
+@media screen and (max-width: 625px) {
+
+    /*.page { max-width: 625px; }*/
+
+    nav.header-nav { position: fixed; top: 0; left: 0; width: auto; padding: 20px 15px; }
+
+    nav.header-nav ul  {
+        display: block;
+        position: relative;
+    }
+
+    nav.header-nav ul li  {
+        display: block;
+        width: 625px;
+        text-align: center;
+        font-size: xx-large;
+    }
+
+    nav.header-nav ul li a {
+        padding-right: 300px;
+        border-color: #ffffff;
+        border: medium;
+    }
+
+    nav.header-nav ul li a.outer:hover {
+        border-bottom: none;
+    }
+
+    nav.header-nav ul li a.middle:hover {
+        border-bottom: none;
+    }
+
+
+    section.main {
+        display: none;
+    }
+
+    section.news { margin-top: 240px; }
+    section.news aside { width: 100%; float: left; margin-right: 10px; }
+
+}
